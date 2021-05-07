@@ -1,3 +1,4 @@
+/* CSS RESET */
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +14,7 @@ body{
 }
 
 
-
+/* SOCIAL SECTION ASIDE */
 .socials{
     position: absolute;
     display: flex;
@@ -29,7 +30,13 @@ body{
 .socials a{
   font-size: 2rem;
   padding-top: 2rem;
+  transition: 0.1s;
     
+}
+
+.socials a:hover{
+    transform: scale(1.1);
+
 }
 
 .socials img{
@@ -38,7 +45,7 @@ body{
 
 
 .text{
-    background-color: #242121;
+    background-color: #0a0a0a;
     width: 100%;
     height: 100%;
     display: flex;
@@ -74,17 +81,14 @@ body{
 
 }
 
-.logo{
-    border: 1px solid black;
-    
-}
-
+/* HERE WE HAVE LOGO SECTION */
 .logoCircle{
+    display: none;
     position: absolute;
     right: 0;
     text-align: center;
-    height: 75px;
-    width: 75px;
+    height: 80px;
+    width: 80px;
     background-color: rgb(158, 60, 60);
     border-radius: 50px;
 
@@ -95,6 +99,8 @@ body{
     position: relative;
     border: 1px solid blueviolet;
 } */
+
+
 
 
 .innerContainer .btn{
@@ -117,6 +123,8 @@ body{
     text-decoration: none;
     font-size: 2rem;
     color: white;
+    position: relative;
+    top: 14px;
 }
 
 
@@ -133,6 +141,10 @@ body{
     line-height: 40px;
 }
 
+/* .innerContainer p{
+    padding-top: 2rem;
+} */
+
 
 .innerContainer h1{
     padding-bottom: 20px;
@@ -143,7 +155,6 @@ body{
 .skills-loading-bar{
     padding-bottom: 2rem;
     padding-top: 2rem;
-    /* border: 1px solid; */
     
 
 }
@@ -159,12 +170,10 @@ body{
 
 }
 
-.innerContainer p{
-    padding-top: 2rem;
-}
+
 
 .inner-bar{
-    background: blue;
+    background: red;
     width: 15px;
     height: 10px;
     border-radius: 10px;
@@ -216,29 +225,36 @@ span{
 }
 
 
-
+/* HERE WE HAVE FOOTER */
 footer{
-
-padding-top: 2rem;
-padding-bottom: 2rem;
-    background-color: #444444;
+padding-top: 1rem;
+padding-bottom: 1rem;
+    background-color: #C4C4C4;
 }
 
 footer .main-conatiner{
     display: flex;
-    color: white;
     justify-content: space-around;
     align-items: center;
 }
+
+
+
+/* FOOTER SOCIALS */
+
 .social h2{
     text-align: center;
     padding-bottom:1rem; 
 
 }
+.social img:hover{
+    transform: scale(1.2);
+}
 
 .social img{
     height: 40px;
-    margin: 0.1rem;
+    margin: 0.3rem;
+    transition: 0.3s;
 }
 
 
@@ -351,37 +367,123 @@ footer .main-conatiner{
 
 
 
+/* HERE WE HAVE FEATURE POJECT SECTION */
+.innerContainer2{
+    width: 70%;
+    margin: auto;
+}
+
+.innerContainer2 .feature{
+    font-size: 2rem;
+    padding-bottom: 3rem;
+
+}
+
+.itemContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 4rem;
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.itemContainer:hover{
+    
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.itemContainer img{
+    height: 250px;
+}
+
+.itemContainer a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: 1px solid red;
+    background-color: rgb(39, 35, 35);
+    color: white;
+}
+
+.itemContainer .proDescription{
+    display: inline-block;
+padding: 50px;
+
+}
+
+.proDescription p{
+    line-height: 2;
+    letter-spacing: 1.2px;
+    padding-bottom: 2rem;
+}
+
+.innerContainer1 h1{
+    padding-left: 20px;
+}
+
+.innerContainer1{
+    display: none;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
+/* HERE WE HAVE MEDIA QUERRIES */
 @media screen and (max-width:640px) {
+
+    .skillsWraper{
+        width: 95%;
+    }
+
+    .skills-loading-bar h2{
+        padding-bottom: 10px;
+    }
+
+    .innerContainer2{
+        display: none;
+    }
+
+
+    .innerContainer1{
+        display: block;
+    }
+
+    .innerContainer p{
+        padding-left: 10px;
+    }
    
     
     .text h2{
         font-size: 2rem;
     }
 
+    .text h3 {
+        font-size: 2rem;
+    }
+
 
     .socials{
-        width: auto;
+        display: none;
+        /* width: auto;
+        padding: 10px; */
     }
 
     .innerContainer{
         width: 90%;
+        margin: 50px auto;
     }
 
     footer .main-conatiner{
         flex-direction: column;
     }
 
+    .innerContainer .btn{
+        left: 22%;
+        width: auto;
+    }
+
+    .text-f{
+        padding: 10px;
+    }
 }
