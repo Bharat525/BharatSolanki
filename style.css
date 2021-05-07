@@ -130,6 +130,10 @@ body{
 
 /* HERE OUR ABOUT SECTION */
 
+.about{
+    padding: 20px;
+}
+
 .innerContainer{
     width: 60%;
     margin: 90px auto;
@@ -258,6 +262,32 @@ footer .main-conatiner{
 }
 
 
+.btnGit{
+    padding-bottom: 1rem;
+    text-align: center;
+    padding: 10px;
+    width: 20%;
+    margin: auto;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+
+.btnGit a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.btnGit:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.btnGit img{
+    height: 20px;
+    margin-left: 1rem;
+}
 
 
 
@@ -387,11 +417,12 @@ footer .main-conatiner{
     align-items: center;
     border: 1px solid red;
     border-radius: 5px;
+    transition: 0.2s;
 }
 
 .itemContainer:hover{
     
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .itemContainer img{
@@ -428,12 +459,27 @@ padding: 50px;
 }
 
 
+.main-conatiner p{
+    font-size: 2rem;
+}
+
+
+
 
 /* HERE WE HAVE MEDIA QUERRIES */
 @media screen and (max-width:640px) {
 
     .skillsWraper{
         width: 95%;
+    }
+
+    .Project-container img{
+        width: 320px;
+        margin: auto;
+    }
+
+    .btnGit{
+        width: 50%;
     }
 
     .skills-loading-bar h2{
@@ -477,6 +523,13 @@ padding: 50px;
     footer .main-conatiner{
         flex-direction: column;
     }
+
+    .main-conatiner p{
+        font-size: 1.2rem;
+    }
+
+
+    
 
     .innerContainer .btn{
         left: 22%;
